@@ -191,20 +191,24 @@ class SPlayer: UIView {
     func play(){
         
         // Toggle controls
-        if self.isPlaying {
+        if !self.isPlaying {
+            self.isPlaying = true
             self.playButton.setImage(UIImage(named: stopButtonImageName), forState: UIControlState.Normal)
+            // Attempt to play audio
+            do{
+                self.player = try AVAudioPlayer(contentsOfURL: loadedAudio)
+                self.player.prepareToPlay()
+                self.player.play()
+            }catch {
+                print("Error getting the audio file")
+            }
+
         } else {
+             self.isPlaying = false
              self.playButton.setImage(UIImage(named: playButtonImageName), forState: UIControlState.Normal)
+             self.player.stop()
         }
-       
-        // Attempt to play audio
-        do{
-            self.player = try AVAudioPlayer(contentsOfURL: loadedAudio)
-            self.player.prepareToPlay()
-            self.player.play()
-        }catch {
-            print("Error getting the audio file")
-        }
+    
     
     }
     
