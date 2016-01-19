@@ -14,6 +14,9 @@
 		9A3AD45D1BCF538D00F2AB75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AD45B1BCF538D00F2AB75 /* LaunchScreen.storyboard */; };
 		9A3AD4681BCF538E00F2AB75 /* SPlayer_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AD4671BCF538E00F2AB75 /* SPlayer_ExampleTests.swift */; };
 		9A3AD4731BCF538E00F2AB75 /* SPlayer_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AD4721BCF538E00F2AB75 /* SPlayer_ExampleUITests.swift */; };
+		9A3AD4811BCF53A500F2AB75 /* SPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3AD4801BCF53A500F2AB75 /* SPlayer.swift */; };
+		9A9F0D9B1BD1B11E007B64DD /* spiral.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A9F0D9A1BD1B11E007B64DD /* spiral.wav */; };
+		9AD1F31B1C4E025C00CFE3BB /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AD1F31A1C4E025C00CFE3BB /* playbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		9A3AD46E1BCF538E00F2AB75 /* SPlayer ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SPlayer ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A3AD4721BCF538E00F2AB75 /* SPlayer_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPlayer_ExampleUITests.swift; sourceTree = "<group>"; };
 		9A3AD4741BCF538E00F2AB75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A3AD4801BCF53A500F2AB75 /* SPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPlayer.swift; sourceTree = "<group>"; };
+		9A9F0D9A1BD1B11E007B64DD /* spiral.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spiral.wav; sourceTree = "<group>"; };
+		9AD1F31A1C4E025C00CFE3BB /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				9A3AD4591BCF538D00F2AB75 /* Assets.xcassets */,
 				9A3AD45B1BCF538D00F2AB75 /* LaunchScreen.storyboard */,
 				9A3AD45E1BCF538D00F2AB75 /* Info.plist */,
+				9A9F0D9A1BD1B11E007B64DD /* spiral.wav */,
+				9A3AD4801BCF53A500F2AB75 /* SPlayer.swift */,
+				9AD1F31A1C4E025C00CFE3BB /* playbutton.png */,
 			);
 			path = "SPlayer Example";
 			sourceTree = "<group>";
@@ -229,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A3AD45D1BCF538D00F2AB75 /* LaunchScreen.storyboard in Resources */,
+				9AD1F31B1C4E025C00CFE3BB /* playbutton.png in Resources */,
+				9A9F0D9B1BD1B11E007B64DD /* spiral.wav in Resources */,
 				9A3AD45A1BCF538D00F2AB75 /* Assets.xcassets in Resources */,
 				9A3AD4581BCF538D00F2AB75 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +268,7 @@
 			files = (
 				9A3AD4551BCF538D00F2AB75 /* ViewController.swift in Sources */,
 				9A3AD4531BCF538D00F2AB75 /* AppDelegate.swift in Sources */,
+				9A3AD4811BCF53A500F2AB75 /* SPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +493,7 @@
 				9A3AD4791BCF538E00F2AB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A3AD47A1BCF538E00F2AB75 /* Build configuration list for PBXNativeTarget "SPlayer ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +502,7 @@
 				9A3AD47C1BCF538E00F2AB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A3AD47D1BCF538E00F2AB75 /* Build configuration list for PBXNativeTarget "SPlayer ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +511,7 @@
 				9A3AD47F1BCF538E00F2AB75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

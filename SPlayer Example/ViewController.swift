@@ -12,8 +12,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Initialize the SPlayer
+        let player = SPlayer(frame: self.view.frame, offsetY: 0, playerMode: .withButton)
+        
+        // Incorporate some configurations that you like
+        player.movePlayerTo(.Bottom)
+        
+        
+        // Add the player to your view
+        self.view.addSubview(player)
+
+        
+        player.loadAudio("spiral", audioType: "wav")
     }
+    
+    override func viewWillLayoutSubviews() {
+ 
+        
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
