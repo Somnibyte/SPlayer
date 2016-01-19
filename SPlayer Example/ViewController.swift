@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         self.view.addSubview(player)
 
         
-        player.loadAudio("spiral", audioType: "wav")
+        player.loadAudio("storm", audioType: "wav")
     }
     
     override func viewWillLayoutSubviews() {

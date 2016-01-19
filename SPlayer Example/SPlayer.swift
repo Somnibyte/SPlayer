@@ -32,6 +32,10 @@ class SPlayer: UIView {
     var playButton:UIButton!
     var loadedAudio:NSURL!
     var player:AVAudioPlayer!
+    var isPlaying:Bool = false
+    var playButtonImageName = "playButton"
+    var stopButtonImageName = "stopButton"
+    
     
     
     // Given Frame
@@ -139,7 +143,7 @@ class SPlayer: UIView {
             playButton = UIButton(type: .InfoLight)
             playButton.frame.origin.x = buttonPosX
             playButton.frame.origin.y = buttonPosY
-            playButton.setImage(UIImage(named: "playbutton"), forState: UIControlState.Normal)
+            playButton.setImage(UIImage(named: playButtonImageName), forState: UIControlState.Normal)
             playButton.addTarget(self, action: "play", forControlEvents: UIControlEvents.TouchUpInside)
       
             print("Button x is located in:  \(playButton.frame.origin.x)")
@@ -185,6 +189,13 @@ class SPlayer: UIView {
     
 
     func play(){
+        
+        // Toggle controls
+        if self.isPlaying {
+            self.playButton.setImage(UIImage(named: stopButtonImageName), forState: UIControlState.Normal)
+        } else {
+             self.playButton.setImage(UIImage(named: playButtonImageName), forState: UIControlState.Normal)
+        }
        
         // Attempt to play audio
         do{
